@@ -1,6 +1,7 @@
 streamlit
 numpy==1.21.6
 matplotlib
-tensorflow==2.10.1
+tensorflow==2.16.1
 opencv-python-headless
 h5py==3.9.0
+keras==3.0.0
