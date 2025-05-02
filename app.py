@@ -7,7 +7,7 @@ import os
 from tensorflow.keras.models import load_model
 
 model_path = os.path.join(os.path.dirname(__file__), 'inception_transfer_learning.keras')
-model = load_model('inception_transfer_learning.keras')
+model = load_model(model_path)
 
 print(model)
 
