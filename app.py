@@ -8,7 +8,7 @@ assert os.path.exists('inception_transfer_learning.keras'), "Model file not foun
 
 from tensorflow.keras.models import load_model
 
-model_path = os.path.join(os.path.dirname(__file__), 'inception_transfer_learning.keras')
+model_path = os.path.join(os.path.dirname(__file__), 'inception_transfer_learning.h5')
 model = load_model(model_path)
 
 print(model)
