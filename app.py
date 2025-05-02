@@ -3,13 +3,11 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
-import os
-assert os.path.exists('inception_transfer_learning.keras'), "Model file not found!"
+from keras import ops
 
 from tensorflow.keras.models import load_model
 
-model_path = os.path.join(os.path.dirname(__file__), 'inception_transfer_learning.h5')
-model = load_model(model_path)
+model = keras.models.load_model('inception_transfer_learning.keras')
 
 print(model)
 
