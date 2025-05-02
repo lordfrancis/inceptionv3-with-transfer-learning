@@ -1,5 +1,5 @@
 streamlit
-numpy
+numpy==1.21.6
 matplotlib
-tensorflow
+tensorflow==2.10.1
 opencv-python-headless
