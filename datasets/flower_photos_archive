@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Animal Kingdom (90): Masters of Survival | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="5400 images of 90 different animals categorized into 11 categories" />
+    <meta name="keywords" content="earth and nature,biology,image,classification,computer vision,animals" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1743816496508;
+    window["pageRequestEndTime"] = 1743816496625;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-ab17ea52188448007942.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/sanadalali/animal-categories-90-masters-of-survival" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/sanadalali/animal-categories-90-masters-of-survival" />
+    <meta property="og:title" content="Animal Kingdom (90): Masters of Survival" />
+    <meta property="og:description" content="5400 images of 90 different animals categorized into 11 categories" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/6931283/11116340/05861d0800f97220701fa0fb1d1e6409/dataset-card.png?t=2025-03-21-12-53-11" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Animal Kingdom (90): Masters of Survival","description":"**Animal Categories: Masters of Survival, Speed, and Strategy**\n\nThis dataset categorizes animals into unique groups based on their survival traits, physical abilities, and behavioral strategies. From stealthy nocturnal hunters to fast-paced predators and intelligent problem-solvers, this collection highlights the diversity and adaptability of the animal kingdom. Each category is carefully curated to showcase the unique characteristics that make these animals stand out in their respective environments.\n\n**Dataset Structure:** \nIn `labels.csv` file\n\n- `image_name`: The `image_name` column contains the file paths or names of the images. The names are structured in a way that indicates the type of animal or object in the image (e.g., `beetle/687486f1cb.jpg`, `parrot/5affc48d37.jpg`).\n- `category`: The `category` column contains the label or category associated with each image. These categories describe the type of animal or object in the image, such as `Tiny Survivors`, `Survival Geniuses`, `Apex Predators`, etc.\n\n**Categories Included:**\n\n- `Stealth &amp; Shadows`: Masters of camouflage and nocturnal survival (e.g., bat, leopard, owl).\n- `Speed Demons`: Fastest animals on land, air, or water (e.g., cheetah, falcon, dolphin).\n- `Tough Defenders`: Hard-shelled or armored animals (e.g., turtle, armadillo, hedgehog).\n- `Apex Predators`: Top of the food chain (e.g., lion, shark, tiger).\n- `Survival Geniuses`: Highly intelligent and skilled problem-solvers (e.g., chimpanzee, octopus, crow).\n- `Flight Masters`: Birds and insects that dominate the skies (e.g., eagle, hummingbird, butterfly).\n- `Underwater Specialists`: Ocean-based creatures (e.g., whale, jellyfish, seahorse).\n- `Cold-Climate Survivors:` Adapted to harsh winters (e.g., penguin, polar bear, arctic fox).\n- `Pack Hunters &amp; Social Strategists`: Animals that work in groups to hunt or survive (e.g., wolf, lion, meerkat).\n- `Tiny Survivors`: Small but resilient creatures (e.g., rat, cockroach, ladybugs).\n- `Other`: Miscellaneous animals that don’t fit into the above categories.\n\n**Acknowledgments:**\nThis dataset was inspired by the incredible diversity of the animal kingdom. Special thanks to the dataset [Animal Image Dataset (90 Different Animals)](https://www.kaggle.com/datasets/iamsouravbanerjee/animal-image-dataset-90-different-animals/data) by [Sourav Banerjee](https://www.kaggle.com/iamsouravbanerjee) for providing a rich collection of animal images that can complement this categorical dataset. Combining these datasets could enable exciting projects, such as image classification or trait-based animal recognition.","url":"https://www.kaggle.com/sanadalali/animal-categories-90-masters-of-survival","version":1,"keywords":["subject, earth and nature","subject, earth and nature, biology","data type, image","task, classification","technique, computer vision","subject, earth and nature, animals"],"license":{"@type":"CreativeWork","name":"Apache 2.0","url":"https://www.apache.org/licenses/LICENSE-2.0"},"identifier":["6931283"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"sanad alali","url":"https://www.kaggle.com/sanadalali","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/15109248-kg.jpg?t=2025-02-14-15-48-51"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/sanadalali/animal-categories-90-masters-of-survival/download?datasetVersionNumber=1","contentSize":"688045863 bytes"}],"commentCount":0,"dateModified":"2025-03-21T11:51:47.867Z","discussionUrl":"https://www.kaggle.com/sanadalali/animal-categories-90-masters-of-survival/discussion","alternateName":"5400 images of 90 different animals categorized into 11 categories","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/6931283/11116340/05861d0800f97220701fa0fb1d1e6409/dataset-card.png?t=2025-03-21-12-53-11","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":211},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":1666},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":9}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" src="/static/assets/runtime.js?v=5a2e2517ae8588354357"></script>
+  <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" src="/static/assets/vendor.js?v=a62013a985d655b5d6e4"></script>
+  <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" src="/static/assets/app.js?v=3e3e6cc7e8a2874737a2"></script>
+    <script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="HhTuTBCd9Sr5HzlLGx2Wsg==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="HhTuTBCd9Sr5HzlLGx2Wsg==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
