@@ -1,10 +1,10 @@
-import pickle
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
+from tensorflow.keras.models import load_model
 
-model = pickle.load(open('inception_transfer_learning.pkl', 'rb'))
+model = load_model('inception_transfer_learning.keras')
 
 print(model)
 
