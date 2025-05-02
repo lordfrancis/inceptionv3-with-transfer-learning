@@ -3,8 +3,10 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
+import os
 from tensorflow.keras.models import load_model
 
+model_path = os.path.join(os.path.dirname(__file__), 'inception_transfer_learning.keras')
 model = load_model('inception_transfer_learning.keras')
 
 print(model)
