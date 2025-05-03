@@ -1,13 +1,11 @@
-import tensorflow
+import tensorflow as tf
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 import keras
 
-from tensorflow.keras.models import load_model
-
-model = load_model('inception_transfer_learning.keras', compile=False)
+model = tf.saved_model.load('inception_transfer_learning.keras', compile=False)
 
 print(model)
 
