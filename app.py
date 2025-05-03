@@ -7,7 +7,7 @@ from keras import ops
 
 from tensorflow.keras.models import load_model
 
-model = keras.models.load_model('inWception_transfer_learning.keras')
+model = keras.models.load_model('inception_transfer_learning.keras')
 
 print(model)
 
