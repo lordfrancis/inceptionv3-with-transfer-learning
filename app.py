@@ -11,7 +11,7 @@ model = load_model('inception_transfer_learning.keras', compile=False)
 print(model)
 
 st.title("Animal Classification App")
-st.write("Upload an image of an animal to classify it.")
+st.write("Upload an image of an animal to classify it. This app is only limited to three animals: zebra, woodpecker, and wombat.")
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
